@@ -1,0 +1,218 @@
+<ui version="4.0">
+ <class>IASParcelJoinDialog</class>
+ <widget class="QDialog" name="IASParcelJoinDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>45</y>
+    <width>400</width>
+    <height>455</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>IAS Parcel Join</string>
+  </property>
+
+  <!-- Tryb pracy -->
+  <widget class="QRadioButton" name="modeLayerRadio">
+   <property name="geometry"><rect><x>20</x><y>12</y><width>170</width><height>24</height></rect></property>
+   <property name="text"><string>Warstwa gatunku</string></property>
+   <property name="checked"><bool>true</bool></property>
+  </widget>
+  <widget class="QRadioButton" name="modeReportRadio">
+   <property name="geometry"><rect><x>195</x><y>12</y><width>190</width><height>24</height></rect></property>
+   <property name="text"><string>Raport dla gminy</string></property>
+  </widget>
+  <widget class="QLabel" name="parcelLayerLabel">
+   <property name="geometry"><rect><x>20</x><y>170</y><width>360</width><height>18</height></rect></property>
+   <property name="text"><string>Warstwa działek (w projekcie lub pobranie z EGiB)</string></property>
+  </widget>
+  <widget class="QComboBox" name="parcelLayerBox">
+   <property name="geometry"><rect><x>20</x><y>190</y><width>360</width><height>30</height></rect></property>
+   <property name="toolTip"><string>Raport obejmuje wszystkie gatunki z listy (zawęź je Kategorią i Statusem). Wybierz własną warstwę działek, aby nic nie pobierać z EGiB.</string></property>
+  </widget>
+
+  <!-- Kategoria: rośliny / zwierzęta -->
+  <widget class="QLabel" name="categoryLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>360</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Kategoria</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="categoryBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>360</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+
+  <!-- Status: szybka eliminacja / rozprzestrzenione na szeroką skalę -->
+  <widget class="QLabel" name="statusLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>115</y>
+     <width>360</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Status</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="statusBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>135</y>
+     <width>360</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+
+  <!-- Lista gatunków -->
+  <widget class="QLabel" name="speciesLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>360</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Gatunek</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="speciesBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>190</y>
+     <width>360</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+
+  <!-- Województwo -->
+  <widget class="QLabel" name="voivodeshipLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>225</y>
+     <width>360</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Województwo</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="voivodeshipBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>245</y>
+     <width>360</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+
+  <!-- Powiat -->
+  <widget class="QLabel" name="countyLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>280</y>
+     <width>360</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Powiat</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="countyBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>300</y>
+     <width>360</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+
+  <!-- Gmina -->
+  <widget class="QLabel" name="communeLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>335</y>
+     <width>360</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Gmina</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="communeBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>355</y>
+     <width>360</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+
+  <!-- Przycisk POBIERZ IAS -->
+  <widget class="QPushButton" name="downloadIASButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>405</y>
+     <width>360</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Pobierz warstwę gatunku</string>
+   </property>
+  </widget>
+
+  <!-- Przycisk RAPORT -->
+  <widget class="QPushButton" name="reportButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>405</y>
+     <width>360</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Generuj raport dla gminy</string>
+   </property>
+  </widget>
+
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
