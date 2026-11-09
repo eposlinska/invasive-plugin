@@ -1,4 +1,4 @@
-[general]
+i[general]
 name=IAS Parcel Join
 qgisMinimumVersion=3.22
 description=Occurrences of invasive alien species (GDOŚ) per commune with parcel numbers (EGiB). Poland only.
@@ -7,7 +7,7 @@ version=0.1.0
 author=Eva Poslinska
 email=xanaphia90@gmail.com
 repository=https://github.com/eposlinska/invasive-plugin
-tracker=https://github.com/EDIT-ME/IASParcelJoin/issues
+tracker=https://github.com/eposlinska/invasive-plugin/issues
 homepage=https://github.com/eposlinska/invasive-plugin
 tags=invasive species, IAS, IGO, parcels, cadastre, EGiB, Poland, WFS, centralny rejestr igo, gatunki obce
 icon=icon.png
