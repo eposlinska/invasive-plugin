@@ -10,3 +10,5 @@ Data: GDOŚ (inwazyjne.gdos.gov.pl), GUGiK PRG and EGiB WFS services.
 Species lists and statuses are compiled from secondary sources and must be checked against the regulation (The list of invasive alien species that threat Poland or the Union) if the update appears.
 
 Developed by Eva Poslinska with the assistance of Claude (Anthropic, model Claude Sonnet 5.5), which helped write and debug the code.
+
+Co-Authored-By: Claude <noreply@anthropic.com>
